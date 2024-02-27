@@ -15,3 +15,15 @@ Hardware:
 This driver libraray uses Bosch Sensortec library (2020-07-20) under BSD-3-Clause license.
 
 </div>
+
+<div>
+
+# Example Of Use
+
+```c++
+BMP388 altSensor = BMP388(BMP388_ADDRESS_I2C, SEA_LEVEL_PRES);
+altSensor.perform_reading();
+std::cout << "Alt: " << altSensor.get_altitude() << std::endl;
+```
+
+</div>
